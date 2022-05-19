@@ -20,12 +20,16 @@
 
         strong {
             display: block;
+        }
 
+        h2 {
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
+    <h2>display</h2>
     <ul>
         <li>
             <!-- 
@@ -83,7 +87,44 @@
 
         </li>
     </ul>
-
+    <h2>position</h2>
+    <!-- position: static, relative, absolut, fixed -->
+    <ol>
+        <li>
+            <a href="./doc/position01.html">position의 기초</a>
+            <p>
+            <ol>
+                <li>기본적인 포지션을 배워보았다.</li>
+                <li>포지션은 어디인지 좌표를 가진다.</li>
+                <li>position: static; 포지션이 아니게 함. 좌표를 가지지 않음</li>
+                <li>position: relative; 자기자신 기준이 된다.</li>
+                <li>position: absolute; 띄운다. 좌표를 가지고 떠오른다. top left 등등 값으로 조절. 플렉스처럼 쪼그라든다. body가 기준</li>
+                <li>position: fixed; absolute와 같은데 기준 자체가 없음 화면이 기준 화면 바깥으로 나가도 스크롤이 안생김 무조건 바깥으로 나옴.</li>
+                <li>박스를 겹칠때는 포지션 옵션을 쓴다.</li>
+                <li>transform 자기 자신을 변경 시키는 속성. 레이아웃을 깨지 않음. 두 번 쓰지 않음. 뒤에 translate붙임</li>
+                <li>픽셀, 퍼센트 단위 중요. 단위 안써도 되는 수치는 0</li>
+                <li>transition 이벤트에 관련된 애니메이션</li>
+                <li>팝업창을 만들고 박스를 클릭하면 팝업창이 닫히는 스크립트를 만듦.</li>
+            </ol>
+            </p>
+            <em>2022.05.19</em>
+            <strong>기초지만 어디서 많이 보던걸 직접 만들어서 재밌음. 수업시간에는 정신없이 따라치기만 해서 뭐가 뭔지 모르다가 마지막 정리하는 시간에 내용을 다시 보고 어떤 태그로 동작하게 되는지
+                이해할 수 있게 된다. 정리의 중요성.</strong>
+        </li>
+        <li>
+            <a href="./doc/position02.html">position의 기초</a>
+            <p>
+            <ol>
+                <li>박스를 클릭하면 왼쪽에서 메뉴 배너가 열리고 닫히는 기능을 만듦.</li>
+                <li>열리고 닫히는 박스는 fixed로 고정. 스크롤을 내려도 페이지에서 사라지지 않음. 열리는 속도는 transition을 0.5s로 설정해서 부드럽게 만듦.</li>
+                <li>열고닫는 박스에 라인을 추가하고 열고 닫힐때마다 대각선으로 움직이는 애니메이션을 추가함.</li>
+                <li>열고 닫는 박스의 선은 span태그로 만듦.</li>
+            </ol>
+            </p>
+            <em>2022.05.19</em>
+            <strong>점 하나 안 찍어서 배너 애니메이션이 동작을 안했다. 점의 중요성을 깨달음. 마찬가지로 여러 홈페이지에서 보기만 하던걸 직접 만들어서 신기함.</strong>
+        </li>
+    </ol>
 </body>
 
 </html>
