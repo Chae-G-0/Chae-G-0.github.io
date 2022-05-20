@@ -1,0 +1,18 @@
+body {
+    background: linear-gradient(45deg, rgb(201, 165, 201), rgb(206, 172, 132)) blanchedalmond;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 30px 0;
+    text-align: center;
+    color: #000;
+}
+
+.basic p {
+    font-size: 15px;
+    text-align: center;
+    margin: 30px 0;
+    line-height: 1.3;
+}
+
