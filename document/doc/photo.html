@@ -8,35 +8,55 @@
     <title>photo</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/photo.css">
+    <script src="../js/position03.js" ></script>
 </head>
 
 <body>
     <section class="basic">
+
         <h1>
-            photo
+            <a href=""><i class="xi-instagram"></i></a>
+            PHOTO_CGY
         </h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo debitis rerum libero magnam, nostrum
-            accusantium aspernatur quibusdam quo, nulla illum harum pariatur! Velit voluptatem praesentium error
-            possimus illum dolor officia quo nemo iste harum? Perspiciatis ducimus tempora asperiores quidem officia
-            odit maxime exercitationem consequuntur vitae fugit unde molestiae animi molestias, dolorem autem
-            reprehenderit ipsam odio fuga perferendis hic iure laborum nesciunt eos velit? Cupiditate, nihil! Quidem
-            molestiae totam eius. Similique aliquam tenetur consectetur ab incidunt at, natus temporibus possimus
-            perferendis corrupti consequuntur accusantium vero nesciunt debitis totam. Nemo magnam itaque amet
-            voluptatibus. Nemo eius ab non nam inventore omnis delectus?</p>
-        <div>
-            <a href="">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corrupti voluptas aut repellat laudantium soluta eveniet hic? <br/> quod distinctio veritatis doloremque nisi deleniti, dolor saepe velit, adipisci eveniet, ea odit! Quam provident excepturi totam nam debitis repudiandae ex accusamus!</p>
+
+        <div class="container">
                 <figure>
-                    <img src="" alt="">
+                    <img src="../img/채가영01.jpg" alt="">
+                    <a href="#!">View</a>
                 </figure>
-            </a>
-        </div>
-        <div>
-            <a href="">
+
                 <figure>
-                    <img src="" alt="">
+                    <img src="../img/IMG_6449.JPG" alt="">
+                    <a href="#!">cafe</a>
                 </figure>
-            </a>
+
+                <figure>
+                    <img src="../img/IMG_6455.JPG" alt="">
+                    <a href="#!">nature</a>
+                </figure>
         </div>
+        <p>copyright - CGY</p>
+        <nav>
+            <ul>
+                <li><a href="">menu1</a></li>
+                <li><a href="">menu2</a></li>
+                <li><a href="">menu3</a></li>
+                <li><a href="">menu4</a></li>
+                <li><a href="">menu5</a></li>
+                <li><a href="">menu6</a></li>
+            </ul>
+        </nav>
+        <div class="mopen">
+            <span></span><span></span><span></span><span></span>
+        </div>
+        <script>
+            document.querySelector('.mopen').addEventListener('click', function () {
+                document.querySelector('nav').classList.toggle('oo');
+                this.classList.toggle('oo');
+            })
+        </script>
     </section>
 </body>
 
