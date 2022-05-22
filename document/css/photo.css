@@ -75,8 +75,8 @@ body {
 nav {
     position: fixed;
     top: 0;
-    left: -500px;
-    width: 500px;
+    left: -300px;
+    width: 300px;
     height: 100vh;
     background: #fff;
     transition: 0.5s;
@@ -136,4 +136,13 @@ nav.oo {
 
 .mopen.oo span:nth-child(4) {
     opacity: 0;
+}
+
+.menu a {
+    font-size: 21px;
+    color: peru;
+}
+
+li {
+    margin: 50px 0;
 }
