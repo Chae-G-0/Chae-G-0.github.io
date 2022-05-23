@@ -20,13 +20,13 @@
 
 .content strong {
     display: block;
-    font-weight: 15px;
+    font-size: 15px;
     font-weight: 700;
     margin: 0 0 10px 0;
 }
 
 .content p {
-    font-weight: 15px;
+    font-size: 15px;
     font-weight: 300;
     line-height: 1.4;
 }
