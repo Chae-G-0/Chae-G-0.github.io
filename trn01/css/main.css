@@ -74,7 +74,7 @@ body {
     width: 1px;
     height: 0.6rem;
     background: #000;
-    transform: translate(-50%);
+    transform: translateY(-50%);
 }
 
 .header i {
@@ -124,4 +124,3 @@ body {
     font-weight: 300;
     line-height: 1.4;
 }
-
