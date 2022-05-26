@@ -177,6 +177,82 @@
             <em>2022.05.23</em>
             <strong>저번주 내용을 복습함. 처음 들을 때 보다 어떻게 작동하는지 더 이해됨. </strong>
         </li>
+        <li>
+            <a href="../trn01/index.html">슬라이드</a>
+            <p>
+            <ol>
+                <li>헤더 메뉴 슬라이드 등을 만듦.</li>
+                <li>폰트에는 보통 색깔을 안넣음 무채색 기본 #444 footer까만 배경에 흰 글씨</li>
+                <li>슬라이드 플러그인 slick, fullpage, aos</li>
+                <li>a 영역은 충분히 클릭할 수 있을 만큼 잡아줘야함 a {display:block;}하면 클릭 범위 넓어짐</li>
+                <li>--mc: #*** var(--mc) 변수</li>
+                <li>핸드폰은 픽셀보다 더 큰 스크린이다. 작은 이미지 넣으면 흐려짐. 보통 이미지는 크게 만들어서 작게 보여줌</li>
+                <li>헤드쪽 메뉴는 꼭 nav 태그로 싸줌</li>
+                <li>아이콘에 weight주면 안됨 아이콘은 두껍게 할 수 없음</li>
+                <li>가상요소의 content:"";는 필수요소</li>
+                <li>inset = position topleft 동시에 가능</li>
+                <li>슬라이드 만들 때 옆으로 서있거나 겹쳐져있다고 해서 포지션 안줌</li>
+                <li>포지션에서 0 auto 안먹음</li>
+                <li>text-shadow: 0 0 2px 글자에 그림자 줌 입체감있는 텍스트</li>
+            </ol>
+            </p>
+            <em>2022.05.24</em>
+            <strong></strong>
+        <li>
+            <a href="../document/doc/position04.html">슬라이드</a>
+            <p>
+            <ol>
+                <li>백그라운드는 공간을 차지하지 않는다 높이 줘야함</li>
+                <li>백그라운드 이미지는 css파일에서 바라보는 경로로 ../입력해야함</li>
+                <li>백그라인드 축약 순서 스크로할때 이미지 고정 효과 =  컬러 이미지 노리피트 픽스드 백그라운드 (포지션)센터센터/커버 아이폰에서는 안됨</li>
+                <li>메인 슬라이더에 피규어 안잡힘</li>
+            </ol>
+            </p>
+            <em>2022.05.25</em>
+            <strong></strong>
+        </li>
+        <li>
+            <a href="../document/doc/position06.html">애니메이션</a>
+            <p>
+            <ol>
+                <li>애니메이션으로 해, 자동차, 하트가 움직이게 만듦</li>
+                <li>ul 안에는 li만 사용 가능 div, strong 등 다른 자식 요소 불가능</li>
+                <li>li안에는 뭐가 들어가든 상관 없음</li>
+                <li>화면 가운데로 오게 하는 공식
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);</li>
+                <li>border-top: 2px solid #333; 픽셀 선 컬러 순서</li>
+                <li>$(function(){
+                    $(".smile").on('click', function() {
+                        $(this).toggleClass('active')
+                    })
+                }) 
+                클릭했을때 바뀌는 자바스크립트</li>
+                <li>$(function(){
+                    $('.top_banner button').on('click', function(){
+                        $('.top_banner').toggleClass('active')
+                    })
+                })
+                = active를 css에서 적용하게 하는 자바스크립트 명령어
+                클릭했을 때 css의 .active에 적힌 값으로 동작해라!</li>
+                <li>@keyframes sun_move {
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+                
+                    animation: sun_move 2s infinite linear;
+                = 애니메이션이 계속 돌아가게 함 </li>
+                <li>클래스명 smile on 일때 css에서 .smile.on 으로 붙여씀</li>
+                <li>line-height: 100vh; 꽉 채우는 이미지</li>
+                <li></li>
+            </ol>
+            </p>
+            <em>2022.05.26</em>
+            <strong>transform ratate 검색해서 읽어보기</strong>
+        </li>
     </ul>
 </body>
 
