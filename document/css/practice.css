@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+}
+
+.top_banner button::after {
+    content: "close";
+}
+
+.top_banner.active button::after {
+    content: "open";
+}
+
+.top_banner {
+    position: relative;
+    background: rgb(87, 73, 73);
+}
+
+.top_banner .container {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.top_banner.active .container {
+    height: 0;
+}
+
+.top_banner button {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 100px;
+    line-height: 20px;
+    transform: translate(-50%);
+    margin-left: 550px;
+    background-color: rgb(87, 73, 73);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.top_banner.active i {
+    transform: rotate(180deg);
+}
+
+.top_banner ul {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    font-size:  15px;
+    color: #fff;
+    padding: 50px 0;
+}
+.main_visual {
+    position: relative;
+    padding: 30px;
+}
+
+.main_visual::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main_slider img {
+    width: 100%;
+}
+
+.main_visual .slogon {
+    position: absolute;
+}
+
+.main_visual figure {
+    height: 800px;
+}
+
+.main_visual .cat01 {
+    background: url(../img/cat01.jpg) no-repeat center center/auto 100%;
+}
+
+.main_visual .cat01.on {
+    background: url(../img/cat01.jpg) no-repeat center center/auto 120%;
+    transition: 2s;
+}
+
+.main_visual .cat02 {
+    background: url(../img/cat02.jpg) no-repeat center center/auto 100%;
+}
+
+.main_visual .cat02.on {
+    background: url(../img/cat02.jpg) no-repeat center center/auto 120%;
+    transition: 2s;
+}
+
+.main_visual .cat03 {
+    background: url(../img/cat03.jpg) no-repeat center center/auto 100%;
+}
+
+.main_visual .cat03.on {
+    background: url(../img/cat03.jpg) no-repeat center center/auto 120%;
+    transition: 2s;
+}
+
+.main_visual .slogan {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    text-align: right;
+    color: #fff;
+    z-index: 999;
+}
+
+.main_visual .slogan h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+}
+
+.main_visual .slogan h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: #f8f9fa;
+    margin: 20px 5px 0 auto;
+}
+
+.main_visual .slogan p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.move_cat {
+    background: rgb(87, 73, 73);
+    padding: 100px 0;
+}
+
+.move_cat>.case {
+    position: relative;
+    width: 809px;
+    height: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.move_cat .case ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+.num {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.move_cat .case img {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
