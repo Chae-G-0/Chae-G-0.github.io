@@ -6,7 +6,9 @@ $(function(){
     $('.main_slider').slick({
         arrows: false,
         autoplay: true,
+        pauseOnHover: false,
         pauseOnFocus: false,
+        fade: true,
     })
 
     $('.num li').on('click', function () {
