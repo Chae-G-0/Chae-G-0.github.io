@@ -16,12 +16,13 @@ body {
 .top_banner {
     position: relative;
     background: rgb(87, 73, 73);
+    z-index: 999;
 }
 
 .top_banner .container {
     width: 1200px;
-    height: 100px;
     margin: 0 auto;
+    height: 100px;
     overflow: hidden;
     transition: 0.5s;
 }
@@ -38,7 +39,7 @@ body {
     line-height: 20px;
     transform: translate(-50%);
     margin-left: 550px;
-    background-color: rgb(87, 73, 73);
+    background: rgb(87, 73, 73);
     color: #fff;
     border: none;
     outline: none;
@@ -53,10 +54,11 @@ body {
     display: flex;
     justify-content: center;
     gap: 150px;
-    font-size:  15px;
+    font-size: 15px;
     color: #fff;
     padding: 50px 0;
 }
+
 .main_visual {
     position: relative;
     padding: 30px;
@@ -80,7 +82,7 @@ body {
 }
 
 .main_visual figure {
-    height: 800px;
+    height: 1000px;
 }
 
 .main_visual .cat01 {
@@ -167,10 +169,19 @@ body {
     gap: 40px;
     color: #fff;
     font-size: 30px;
+    cursor: pointer;
+    padding: 30px;
 }
 
 .move_cat .case img {
     width: 100%;
     height: 100%;
     flex: 1;
+}
+
+.footer {
+    text-align: center;
+    line-height: 100px;
+    background: #ddd;
+    color: rgb(87, 73, 73);
 }
