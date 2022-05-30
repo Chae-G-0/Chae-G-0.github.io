@@ -139,10 +139,12 @@
 
     .mopen.on span:nth-child(2) {
         transform: rotate(45deg);
+        transition: 0.5s;
     }
 
     .mopen.on span:nth-child(3) {
         transform: rotate(-45deg);
+        transition: 0.5s;
     }
 
     .mopen.on span:nth-child(4) {
