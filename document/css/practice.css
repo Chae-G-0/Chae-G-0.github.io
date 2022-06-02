@@ -73,43 +73,25 @@ body {
     height: 100%;
 }
 
-.main_slider img {
-    width: 100%;
-}
-
 .main_visual .slogon {
     position: absolute;
 }
 
 .main_visual figure {
-    height: 1000px;
+    width: 1200px;
+    height: 800px;
 }
 
 .main_visual .cat01 {
-    background: url(../img/cat01.jpg) no-repeat center center/auto 100%;
-}
-
-.main_visual .cat01.on {
-    background: url(../img/cat01.jpg) no-repeat center center/auto 120%;
-    transition: 2s;
+    background: url(../img/cat01.jpg) no-repeat center center/cover;
 }
 
 .main_visual .cat02 {
-    background: url(../img/cat02.jpg) no-repeat center center/auto 100%;
-}
-
-.main_visual .cat02.on {
-    background: url(../img/cat02.jpg) no-repeat center center/auto 120%;
-    transition: 2s;
+    background: url(../img/cat02.jpg) no-repeat center center/cover;
 }
 
 .main_visual .cat03 {
-    background: url(../img/cat03.jpg) no-repeat center center/auto 100%;
-}
-
-.main_visual .cat03.on {
-    background: url(../img/cat03.jpg) no-repeat center center/auto 120%;
-    transition: 2s;
+    background: url(../img/cat03.jpg) no-repeat center center/cover;
 }
 
 .main_visual .slogan {
@@ -148,7 +130,7 @@ body {
     padding: 100px 0;
 }
 
-.move_cat>.case {
+.move_cat .case {
     position: relative;
     width: 809px;
     height: 450px;
@@ -166,7 +148,7 @@ body {
 .num {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 100px;
     color: #fff;
     font-size: 30px;
     cursor: pointer;
