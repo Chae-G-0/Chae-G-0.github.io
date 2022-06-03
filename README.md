@@ -1,1 +1,1 @@
-# Chae-G-0.githube.io
+# Chae-G-0.github.io
