@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position sticky</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .sticky {
+            position: sticky;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            color: #fff;
+            text-align: center;
+            line-height: 100vh;
+        }
+
+        header {
+            background: rgb(221, 122, 139);
+        }
+
+        main {
+            background: rgb(206, 206, 155);
+        }
+
+        footer {
+            background: rgb(135, 135, 209);
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .container figure {
+            flex: 1;
+            line-height: 1.4;
+        }
+
+        .container figure:nth-child(2) {
+            background: #333;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky">
+        header
+    </header>
+    <main class="sticky">
+
+    </main>
+    <section class="sticky">
+        <div class="container">
+            <figure>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deserunt ea quisquam assumenda vero
+                voluptates, alias cupiditate ad repellat, exercitationem recusandae quia voluptatibus natus eos dicta
+                corporis molestias ipsum quas labore inventore voluptatum aliquid suscipit modi? Quod laudantium vel
+                illum, soluta sunt, adipisci quae corporis optio ducimus odio numquam illo rerum! Quisquam doloribus
+                dolorum ea, quae a hic fugit, maxime deleniti accusamus natus quis, et iusto quod harum ipsam.
+                Exercitationem eligendi hic porro obcaecati placeat quia consequatur aliquid minus vero cupiditate quam
+                rem quasi, vel, dolor non. Officiis odit nemo consequatur, exercitationem, laboriosam, porro ullam
+                molestias quam doloribus dolores quo quisquam magnam commodi a nam! Dolor itaque tenetur nesciunt quas
+                adipisci quos laborum excepturi odit pariatur nisi, debitis quibusdam, explicabo corrupti aspernatur
+                dolores! Fugiat, quae autem earum ullam non nemo veniam ratione ut deserunt dolores voluptas itaque
+                dolore blanditiis aspernatur. Labore libero, harum corrupti tenetur culpa atque assumenda distinctio,
+                iste quo laborum hic et, sapiente accusantium aliquam adipisci? Dolore, recusandae excepturi numquam
+                odio debitis rerum veritatis est exercitationem temporibus doloremque tempora corrupti ex vitae unde
+                libero quo eius nam? Inventore voluptas molestiae alias odio eaque et optio laudantium quasi, porro
+                incidunt, quaerat obcaecati earum sit quae aperiam. Deserunt, iste quo.
+            </figure>
+            <figure>
+
+            </figure>
+        </div>
+    </section>
+    <footer class="sticky">
+        footer
+    </footer>
+</body>
+
+</html>
