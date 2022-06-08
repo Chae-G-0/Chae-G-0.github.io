@@ -132,6 +132,10 @@
             position: relative;
         }
 
+        .psd05 figure:hover::after {
+            transform: rotate(720deg);
+        }
+
         .psd05 figure::after {
             content: attr(data-num);
             position: absolute;
@@ -142,6 +146,7 @@
             font-size: 30px;
             color: #fff;
             border-radius: 50%;
+            transition: 1s;
         }
 
         hr.list_hr {
