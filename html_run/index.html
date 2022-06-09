@@ -12,10 +12,11 @@
         }
 
         h2 {
-            font-size: 30;
-            font-weight: 700;
+            width: 300px;
+            font-size: 20;
+            font-weight: 500;
             line-height: 50px;
-            padding: 30px 0 0 100px;
+            padding: 0 0 0 100px;
         }
 
         a {
@@ -23,7 +24,21 @@
         }
 
         ul {
-            padding: 0 0 0 100px;
+            padding: 0 0 0 50px;
+        }
+
+        .container {
+            display: block;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .container div {
+            display: flex;
+            border: 1px solid #ddd;
+            border-radius: 40px;
+            margin: 30px;
+            padding: 30px;
         }
     </style>
 </head>
@@ -32,126 +47,142 @@
 
     <h1>HTML - BASIC</h1>
     <hr />
-    <h2>기본 박스 - box-model</h2>
-    <ul>
-        <li>
-            <a href="./doc/box01.html">기본 박스01</a>
-            <p>기본적인 박스의 성질에 대한 이해 width height padding margin</p>
-            <p>button input img는 inlineblock 속성을 가짐</p>
-            <p>외부내부 중 뒤에 쓴 것이 앞에 쓴 것을 덮어씀</p>
-            <p>내부로 쓰는것은 웹표준에 맞지않음</p>
-            <p>모듈화 하나의 파일로 컨트롤 하기 위해 외부파일 씀</p>
-            <p>padding border는 margin값 정해놔도 늘어는다 이때 box-sizingborderbox씀</p>
-        </li>
-        <li>
-            <a href="./doc/box02.html">기본 박스02</a>
-            <p>선택자에 대한 이해</p>
-            <p>and 선택자 주의점</p>
-            <p>*는 모든 선택자 body까지 포함함</p>
-            <p>id는 보통 가장 바깥쪽 박스에</p>
-            <p>css는 부모선택자가 없음 위로 역행안됨 형제 선택자도 위에 선택자는 안됨</p>
-            <p>outline은 레이아웃을 안깸 border가 없음</p>
-            <p>nth-child(n) n번째 자식태그 부모 태그 안에 같은 자식태그 있을 경우 주의</p>
-        </li>
-    </ul>
-    <h2>다단메뉴 - multi-menu</h2>
-    <ul>
-        <li>
-            <a href="./doc/multi_menu01.html">다단메뉴01</a>
-            <p>다단메뉴를 만들어봄.</p>
-            <p>포지션을 이용함</p>
-            <p>before after는 box-size에 안잡힌다. 자체에 box-sizing:border-box적어줘야함</p>
-        </li>
-        <li>
-            <a href="./doc/multi_menu02.html">다단메뉴02</a>
-            <p>메뉴에 마우스를 올렸을때 하위 메뉴가 떠오르는 효과를 만들어봄.</p>
-            <p>inset: position에서 top left 등 값 입력 축약형</p>
-        </li>
-        <li>
-            <a href="./doc/test.html">다단메뉴 테스트</a>
-            <p>hover를 이용해 메뉴에 마우스를 올렸을때 하위 메뉴 전체가 보이는 다단 메뉴를 만들어봄</p>
-            <em>2022.06.02</em>
-        </li>
-    </ul>
-    <h2>total position</h2>
-    <ul>
-        <li>
-            <a href="./doc/display01.html">display01</a>
-            <p>inline 요소는 width, height, 상하 margin, padding 값을 줄 수 없다.</p>
-            <p></p>
-        </li>
-        <li>
-            <a href="./doc/position01.html">position01</a>
-            <p> position: relative; 좌표를 가지는 position 상태가 된다.</p>
-            <p>일반적인 position의 floationg이나 width의 변화가 없다.</p>
-            <p>position: absolute; 뜬다. 쪼그라든다. 기준점이 없어져서 body를 기준으로 포개진다.
-                block에 속성을 가지게 된다.</p>
-            <p>position: absolute; 의 기준을 부모요소의 position:relative, absolute, fixed 로 기준을 만들어 줄 수 있다.</p>
-            <p>z-index로 흐름의 순서를 바꿀 수 있다. 정수를 쓴다.</p>
-            <p>position: fiexd는 기준이 없다. (viewport를 기준으로 한다.)
-                스크롤바가 생기지 않는다.</p>
-        </li>
-        <li>
-            <a href="./doc/position02.html">position sticky</a>
-            <p>사진이나 글 등 배경이 고정된 상태로 스크롤을 내리면 다음 영역이 올라온다.</p>
-        </li>
-        <li>
-            <a href="./doc/position03.html">sticky 활용</a>
-            <p>화면을 반으로 나누어 왼쪽에서 텍스트가 올라온 다음 오른쪽에서 사진이 올라오는 형식의 웹사이트를 만들어봄</p>
-            <em>2022.06.03</em>
-        </li>
-    </ul>
-    <h2>hover</h2>
-    <ul>
-        <li>
-            <a href="./doc/hover01.html">hover활용</a>
-            <p>마우스를 사진 위에 올렸을 때 생기는 여러가지 효과를 만들어봄 </p>
-            <em>2022.06.07</em>
-        </li>
-    </ul>
-    <h2>포토샵과 가상요소</h2>
-    <ul>
-        <li>
-            <a href="./doc/psdtohtml01.html">포토샵 활용</a>
-            <p>포토샵으로 제작한 시안을 바탕으로 똑같이 페이지를 만들어봄</p>
-        </li>
-        <li>
-            <a href="./doc/Pseudo-Element01.html">가상요소 활용</a>
-            <p>before, after로 여러가지 가상요소를 만들어봄</p>
-            <p>아이콘을 가상요소로 쓸 때는 페이지 아이콘 코드 복붙</p>
-            <em>2022.06.08</em>
-        </li>
-    </ul>
-    <h2>header</h2>
-    <ul>
-        <li>
-            <a href="./doc/psdtohtml02.html">포토샵 시안 활용</a>
-            <p>header menu와 main visual 영역을 포토샵으로 시안 작업 후 똑같이 만들어봄</p>
-        </li>
-        <li>
-            <a href="./doc/header01.html">header01</a>
-            <p>로고와 메뉴가 1200px박스 안에서 양끝에 위차하도록 만들어봄</p>
-        </li>
-        <li>
-            <a href="./doc/header02.html">header02</a>
-            <p>로고와 메뉴가 양쪽에 위치하고 메뉴 옆에 아이콘이 위치하게 만들어봄</p>
-        </li>
-        <li>
-            <a href="./doc/header03.html">header03</a>
-            <p>로고와 아이콘을 양끝에 위치시키고 메뉴를 가운데로 오게 만들어봄</p>
-            <p>로고와 아이콘의 박스 크기를 동일하게 함</p>
-            <p>로고와 메뉴, 메뉴와 아이콘 사이의 여백을 동일하게 만들어 가운데로 위치하게 함</p>
-        </li>
-        <li>
-            <a href="./doc/header04.html">header04</a>
-            <p>포토샵으로 제작한 시안을 바탕으로 똑같이 페이지를 만들어봄</p>
-        </li>
-        <li>
-            <a href="./doc/header05.html">header05</a>
-            <p>로고를 가운데에 위치시키고 양쪽에 메뉴를 배치함</p>
-            <em>2022.06.09</em>
-        </li>
-    </ul>
+    <div class="container">
+        <div>
+            <h2>기본 박스 - box-model</h2>
+            <ul>
+                <li>
+                    <a href="./doc/box01.html">기본 박스01</a>
+                    <p>기본적인 박스의 성질에 대한 이해 width height padding margin</p>
+                    <p>button input img는 inlineblock 속성을 가짐</p>
+                    <p>외부내부 중 뒤에 쓴 것이 앞에 쓴 것을 덮어씀</p>
+                    <p>내부로 쓰는것은 웹표준에 맞지않음</p>
+                    <p>모듈화 하나의 파일로 컨트롤 하기 위해 외부파일 씀</p>
+                    <p>padding border는 margin값 정해놔도 늘어는다 이때 box-sizingborderbox씀</p>
+                </li>
+                <li>
+                    <a href="./doc/box02.html">기본 박스02</a>
+                    <p>선택자에 대한 이해</p>
+                    <p>and 선택자 주의점</p>
+                    <p>*는 모든 선택자 body까지 포함함</p>
+                    <p>id는 보통 가장 바깥쪽 박스에</p>
+                    <p>css는 부모선택자가 없음 위로 역행안됨 형제 선택자도 위에 선택자는 안됨</p>
+                    <p>outline은 레이아웃을 안깸 border가 없음</p>
+                    <p>nth-child(n) n번째 자식태그 부모 태그 안에 같은 자식태그 있을 경우 주의</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>다단메뉴 - multi-menu</h2>
+            <ul>
+                <li>
+                    <a href="./doc/multi_menu01.html">다단메뉴01</a>
+                    <p>다단메뉴를 만들어봄.</p>
+                    <p>포지션을 이용함</p>
+                    <p>before after는 box-size에 안잡힌다. 자체에 box-sizing:border-box적어줘야함</p>
+                </li>
+                <li>
+                    <a href="./doc/multi_menu02.html">다단메뉴02</a>
+                    <p>메뉴에 마우스를 올렸을때 하위 메뉴가 떠오르는 효과를 만들어봄.</p>
+                    <p>inset: position에서 top left 등 값 입력 축약형</p>
+                </li>
+                <li>
+                    <a href="./doc/test.html">다단메뉴 테스트</a>
+                    <p>hover를 이용해 메뉴에 마우스를 올렸을때 하위 메뉴 전체가 보이는 다단 메뉴를 만들어봄</p>
+                    <em>2022.06.02</em>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+
+            <h2>total position</h2>
+            <ul>
+                <li>
+                    <a href="./doc/display01.html">display01</a>
+                    <p>inline 요소는 width, height, 상하 margin, padding 값을 줄 수 없다.</p>
+                    <p></p>
+                </li>
+                <li>
+                    <a href="./doc/position01.html">position01</a>
+                    <p> position: relative; 좌표를 가지는 position 상태가 된다.</p>
+                    <p>일반적인 position의 floationg이나 width의 변화가 없다.</p>
+                    <p>position: absolute; 뜬다. 쪼그라든다. 기준점이 없어져서 body를 기준으로 포개진다.
+                        block에 속성을 가지게 된다.</p>
+                    <p>position: absolute; 의 기준을 부모요소의 position:relative, absolute, fixed 로 기준을 만들어 줄 수 있다.</p>
+                    <p>z-index로 흐름의 순서를 바꿀 수 있다. 정수를 쓴다.</p>
+                    <p>position: fiexd는 기준이 없다. (viewport를 기준으로 한다.)
+                        스크롤바가 생기지 않는다.</p>
+                </li>
+                <li>
+                    <a href="./doc/position02.html">position sticky</a>
+                    <p>사진이나 글 등 배경이 고정된 상태로 스크롤을 내리면 다음 영역이 올라온다.</p>
+                </li>
+                <li>
+                    <a href="./doc/position03.html">sticky 활용</a>
+                    <p>화면을 반으로 나누어 왼쪽에서 텍스트가 올라온 다음 오른쪽에서 사진이 올라오는 형식의 웹사이트를 만들어봄</p>
+                    <em>2022.06.03</em>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>hover</h2>
+            <ul>
+                <li>
+                    <a href="./doc/hover01.html">hover활용</a>
+                    <p>마우스를 사진 위에 올렸을 때 생기는 여러가지 효과를 만들어봄 </p>
+                    <em>2022.06.07</em>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>포토샵과 가상요소</h2>
+            <ul>
+                <li>
+                    <a href="./doc/psdtohtml01.html">포토샵 활용</a>
+                    <p>포토샵으로 제작한 시안을 바탕으로 똑같이 페이지를 만들어봄</p>
+                </li>
+                <li>
+                    <a href="./doc/Pseudo-Element01.html">가상요소 활용</a>
+                    <p>before, after로 여러가지 가상요소를 만들어봄</p>
+                    <p>아이콘을 가상요소로 쓸 때는 페이지 아이콘 코드 복붙</p>
+                    <em>2022.06.08</em>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>header</h2>
+            <ul>
+                <li>
+                    <a href="./doc/psdtohtml02.html">포토샵 시안 활용</a>
+                    <p>header menu와 main visual 영역을 포토샵으로 시안 작업 후 똑같이 만들어봄</p>
+                </li>
+                <li>
+                    <a href="./doc/header01.html">header01</a>
+                    <p>로고와 메뉴가 1200px박스 안에서 양끝에 위차하도록 만들어봄</p>
+                </li>
+                <li>
+                    <a href="./doc/header02.html">header02</a>
+                    <p>로고와 메뉴가 양쪽에 위치하고 메뉴 옆에 아이콘이 위치하게 만들어봄</p>
+                </li>
+                <li>
+                    <a href="./doc/header03.html">header03</a>
+                    <p>로고와 아이콘을 양끝에 위치시키고 메뉴를 가운데로 오게 만들어봄</p>
+                    <p>로고와 아이콘의 박스 크기를 동일하게 함</p>
+                    <p>로고와 메뉴, 메뉴와 아이콘 사이의 여백을 동일하게 만들어 가운데로 위치하게 함</p>
+                </li>
+                <li>
+                    <a href="./doc/header04.html">header04</a>
+                    <p>포토샵으로 제작한 시안을 바탕으로 똑같이 페이지를 만들어봄</p>
+                </li>
+                <li>
+                    <a href="./doc/header05.html">header05</a>
+                    <p>로고를 가운데에 위치시키고 양쪽에 메뉴를 배치함</p>
+                    <em>2022.06.09</em>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>
