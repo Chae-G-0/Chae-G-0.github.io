@@ -44,6 +44,13 @@
         .container div:hover {
             background: rgb(241, 241, 241);
         }
+
+        .top {
+            width: 50px;
+            text-align: center;
+            margin: 0 auto;
+            background: #ddd;
+        }
     </style>
 </head>
 
@@ -190,31 +197,24 @@
             <h2>다단메뉴와 반응형</h2>
             <ul>
                 <li>
-                    <a href=""></a>
-                    <p></p>
+                    <a href="./doc/multi_menu03.html"></a>
+                    <p>다단메뉴 만들때 선택자 자식태그로 쓰기</p>
+                    <p>top left 좌표는 border를 넘어가지 않음 패딩은 건너뜀</p>
+                    <p>자식태그가 부모태그의 z-index를 못넘음</p>
+                    <p> width: calc(100% - 90px); 화면이 줄어도 90px유지함</p>
+                    <p>클릭한 a만 나오게 할 때 this씀</p>
+                    <p>css에서 설계 class만 컨트롤 html에 클래스를 붙이는 설계</p>
+                    <p>js는 컨트롤 최소한의 코드만 써서 동작하게 함</p>
                 </li>
-                <li>
-                    <a href=""></a>
-                    <p></p>
-                </li>
-                <li>
-                    <a href=""></a>
-                    <p></p>
-                </li>
-                <li>
-                    <a href=""></a>
-                    <p></p>
-                </li>
-                <li>
-                    <a href=""></a>
-                    <p></p>
-                    <em>2022.06.10</em>
+                <em>2022.06.10</em>
                 </li>
             </ul>
         </div>
     </div>
-    <div><a href="#">link</a></div>
-    
+    <div class="top">
+        <a href="#">TOP</a>
+    </div>
+
 </body>
 
 </html>
