@@ -134,8 +134,8 @@
 }
 
 .mainVisual .mainSlider .item02 .inner {
-    color: #333;
-    text-shadow: 0 0 3px #000;
+    color: #fff;
+    text-shadow: 0 0 3px #333;
 }
 
 .mainVisual .mainSlider .inner h2 {
@@ -152,7 +152,6 @@
 
 .mainVisual .mainSlider .inner a {
     display: inline-block;
-    width: 100px;
     padding: 5px 20px;
     background: #333;
 }
