@@ -389,7 +389,7 @@
 }
 
 .mainContent3 figure:hover img {
-    transform-origin: 0% 0% 0%;
+    transform-origin: center;
     transform: rotate(-15deg);
 }
 
