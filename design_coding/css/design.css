@@ -41,14 +41,119 @@
     text-align: center;
 }
 
-#main .content h2 {
+#main .content .textContent {
+    margin: 0 0 100px 0;
+}
+
+#main .content .textContent h2 {
     color: #333;
     font-size: 30px;
     font-weight: 700;
+    margin: 0 0 20px 0;
 }
 
-#main .content p {
+#main .content .textContent p {
     color: #333;
     font-size: 15px;
     font-weight: 300;
 }
+
+#main .content .container {
+    display: flex;
+    gap: 183px;
+}
+
+#main .content .container div {
+    flex: 1;
+    border: 1px solid #333;
+    border-radius: 50%;
+}
+
+#main .content .container .text01 h2::after {
+    display: block;
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #333;
+}
+
+#main .content .container h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 60px;
+}
+
+#main .content .container p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 95px 0;
+}
+
+#main .mainProduct {
+    background: #f1f1f1;
+}
+
+.mainProduct .mainslider .slider {
+    padding: 100px 0;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainProduct .mainslider .slider figure {
+    position: relative;
+    height: 400px;
+    padding: 0 15px;
+}
+
+.mainProduct .mainslider .slider .item01 {
+    background: url(../img/slide01.jpg) no-repeat center;
+}
+
+.mainProduct .mainslider .slider .item02 {
+    background: url(../img/slide02.jpg) no-repeat center;
+}
+
+.mainProduct .mainslider .slider .item03 {
+    background: url(../img/slide03.jpg) no-repeat center;
+}
+
+.mainProduct .mainslider .slider .inner {
+    position: absolute;
+    inset: 20% auto auto 70%;
+    transform: translate(-50%, -50%);
+}
+
+.mainProduct .mainslider .slider .inner h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.mainProduct .mainslider .slider .inner p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.mainProduct .mainslider .slider .slick-dots {
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.mainProduct .mainslider .slider .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.mainProduct .mainslider .slider .slick-dots li button {
+    border: none;
+    outline: none;
+    background: #999;
+    width: 100px;
+    height: 2px;
+    font-size: 0;
+}
+
+/* 2022.06.23 */
+
