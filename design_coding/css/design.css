@@ -90,11 +90,23 @@
 }
 
 #main .mainProduct {
+    padding: 100px 0;
     background: #f1f1f1;
 }
 
+.mainslider h2 {
+    text-align: center;
+    margin: 0 0 50px 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+}
+
+.mainProduct .mainslider {
+    position: relative;
+}
+
 .mainProduct .mainslider .slider {
-    padding: 100px 0;
     width: 1200px;
     margin: 0 auto;
 }
@@ -102,19 +114,19 @@
 .mainProduct .mainslider .slider figure {
     position: relative;
     height: 400px;
-    padding: 0 15px;
+
 }
 
 .mainProduct .mainslider .slider .item01 {
-    background: url(../img/slide01.jpg) no-repeat center;
+    background: url(../img/slide01.jpg) no-repeat center center/cover;
 }
 
 .mainProduct .mainslider .slider .item02 {
-    background: url(../img/slide02.jpg) no-repeat center;
+    background: url(../img/slide02.jpg) no-repeat center center/cover;
 }
 
 .mainProduct .mainslider .slider .item03 {
-    background: url(../img/slide03.jpg) no-repeat center;
+    background: url(../img/slide03.jpg) no-repeat center center/cover;
 }
 
 .mainProduct .mainslider .slider .inner {
@@ -155,5 +167,22 @@
     font-size: 0;
 }
 
-/* 2022.06.23 */
+.mainProduct .mainslider i {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: #333;
+}
 
+.mainProduct .mainslider i:nth-child(1) {
+    margin: 0 0 0 -650px;
+}
+
+.mainProduct .mainslider i:nth-child(2) {
+    margin: 0 0 0 650px;
+}
+
+
+
+/* 2022.06.23 */
