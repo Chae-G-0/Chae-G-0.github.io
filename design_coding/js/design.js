@@ -1,10 +1,11 @@
 $(function () {
     $('.mainslider .slider').slick({
+        // autoplay: true,
         arrows: false,
         dots: true,
         slidesToShow: 1,
         centerMode: true,
-        centerPadding: '150px'
+        centerPadding: '170px'
     });
 
     $('.mainslider .arrows i:nth-child(1)').on('click', function () {

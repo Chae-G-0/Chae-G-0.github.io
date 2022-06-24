@@ -67,17 +67,26 @@
     flex: 1;
     border: 1px solid #333;
     border-radius: 50%;
+
 }
 
-#main .content .container .text01 h2::after {
+/* #main .content .container .text::after {
+    content: "\e9c5";
+    font-size: 40px;
+} */
+
+#main .content .container .text h2::after {
+    position: absolute;
+    top: 200%;
     display: block;
     content: "";
-    width: 100px;
+    width: 150px;
     height: 1px;
     background: #333;
 }
 
 #main .content .container h2 {
+    position: relative;
     font-size: 25px;
     font-weight: 500;
     margin: 60px;
@@ -91,7 +100,7 @@
 
 #main .mainProduct {
     padding: 100px 0;
-    background: #f1f1f1;
+    background: #f8f8f8;
 }
 
 .mainslider h2 {
@@ -109,6 +118,7 @@
 .mainProduct .mainslider .slider {
     width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .mainProduct .mainslider .slider figure {
@@ -118,24 +128,26 @@
 }
 
 .mainProduct .mainslider .slider .item01 {
-    background: url(../img/slide01.jpg) no-repeat center center/cover;
+    background: url(../img/slide01.jpg) no-repeat center;
 }
 
 .mainProduct .mainslider .slider .item02 {
-    background: url(../img/slide02.jpg) no-repeat center center/cover;
+    background: url(../img/slide02.jpg) no-repeat center;
 }
 
 .mainProduct .mainslider .slider .item03 {
-    background: url(../img/slide03.jpg) no-repeat center center/cover;
+    background: url(../img/slide03.jpg) no-repeat center;
 }
 
 .mainProduct .mainslider .slider .inner {
     position: absolute;
-    inset: 20% auto auto 70%;
+    inset: 20% auto auto 75%;
     transform: translate(-50%, -50%);
+    text-align: right;
+    letter-spacing: -0.025em;
 }
 
-.mainProduct .mainslider .slider .inner h2 {
+.mainProduct .mainslider .slider .inner h3 {
     font-size: 25px;
     font-weight: 700;
     color: #fff;
@@ -145,7 +157,9 @@
 .mainProduct .mainslider .slider .inner p {
     font-size: 15px;
     font-weight: 300;
+    width: 220px;
     color: #fff;
+
 }
 
 .mainProduct .mainslider .slider .slick-dots {
@@ -163,7 +177,7 @@
     outline: none;
     background: #999;
     width: 100px;
-    height: 2px;
+    height: 3px;
     font-size: 0;
 }
 
@@ -183,6 +197,91 @@
     margin: 0 0 0 650px;
 }
 
-
-
 /* 2022.06.23 */
+
+.mainProject {
+    padding: 100px 0;
+    text-align: center;
+
+}
+
+.mainProject h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 50px 0;
+    color: #333;
+}
+
+#main .mainProject .container {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#main .mainProject .container .up {
+    margin: 0 0 70px 0;
+}
+
+#main .mainProject .container .inbox {
+    margin: 0 0 20px 0;
+}
+
+
+#main .mainProject .container h3 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #333;
+    text-align: left;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.025em;
+}
+
+#main .mainProject .container p {
+    font-size: 15px;
+    font-weight: 100;
+    text-align: left;
+    letter-spacing: -0.025em;
+}
+
+#main .mainValue {
+    background: url(../img/main_visual02.jpg);
+    height: 545px;
+    padding: 100px 0;
+}
+
+#main .mainValue h2 {
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 0 100px 0;
+}
+
+#main .mainValue .container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#main .mainValue .container .box {
+    display: flex;
+    gap: 30px;
+}
+
+#main .mainValue .container .inner {
+    flex: 1;
+    border: 1px solid #fff;
+    width: 380px;
+    height: 170px;
+    padding: 30px;
+}
+
+#main .mainValue .container .inner p {
+    font-size: 17px;
+    font-weight: 300;
+    color: #fff;
+}
+
+#footer {
+    background: #333;
+    height: 207px;
+}
