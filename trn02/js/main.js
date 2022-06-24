@@ -87,7 +87,7 @@ $(function () {
 
     $('.toTop').on('click', function () {
         $('html, body').animate({ scrollTop: 0 }, 300)
-    })
+    });
 
     $(window).on('scroll', function () {
         var sct = $(window).scrollTop();
@@ -96,5 +96,14 @@ $(function () {
         } else {
             $('.toTop').fadeOut(1000)
         }
+    });
+
+    $('#fl').on('change', function () {
+        console.log($(this), $(this).val())
+        var lnk = $(this).val();
+        if (lnk) {
+            window.open(lnk);
+        }
+
     })
 })
