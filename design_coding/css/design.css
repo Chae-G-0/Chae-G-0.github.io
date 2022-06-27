@@ -12,9 +12,14 @@
     justify-content: space-between;
 }
 
+#header .container img {
+    width: 120px;
+    height: 55px;
+}
+
 #header .container ul {
     display: flex;
-    gap: 40px;
+    gap: 65px;
     color: #fff;
     font-size: 17px;
     font-weight: 700;
@@ -67,19 +72,25 @@
     flex: 1;
     border: 1px solid #333;
     border-radius: 50%;
-
 }
 
-/* #main .content .container .text::after {
+#main .content .container .text {
+    position: relative;
+}
+
+#main .content .container .text:nth-child(-n+2)::after {
+    position: absolute;
+    inset: 45% auto auto 125%;
+    font-family: "xeicon";
     content: "\e9c5";
     font-size: 40px;
-} */
+}
 
-#main .content .container .text h2::after {
+#main .content .container h2::after {
+    content: "";
     position: absolute;
     top: 200%;
     display: block;
-    content: "";
     width: 150px;
     height: 1px;
     background: #333;
@@ -113,33 +124,21 @@
 
 .mainProduct .mainslider {
     position: relative;
-}
-
-.mainProduct .mainslider .slider {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 .mainProduct .mainslider .slider figure {
     position: relative;
     height: 400px;
-
+    padding: 0 15px;
 }
 
-.mainProduct .mainslider .slider .item01 {
-    background: url(../img/slide01.jpg) no-repeat center;
+.mainProduct .mainslider .slider figure img {
+    width: 100%;
 }
 
-.mainProduct .mainslider .slider .item02 {
-    background: url(../img/slide02.jpg) no-repeat center;
-}
-
-.mainProduct .mainslider .slider .item03 {
-    background: url(../img/slide03.jpg) no-repeat center;
-}
-
-.mainProduct .mainslider .slider .inner {
+.mainProduct .mainslider .slider figure .inner {
     position: absolute;
     inset: 20% auto auto 75%;
     transform: translate(-50%, -50%);
@@ -164,21 +163,23 @@
 
 .mainProduct .mainslider .slider .slick-dots {
     text-align: center;
-    padding: 20px 0 0 0;
+    margin: 10px 0;
 }
 
 .mainProduct .mainslider .slider .slick-dots li {
     display: inline-block;
-    margin: 0 5px;
-}
-
-.mainProduct .mainslider .slider .slick-dots li button {
-    border: none;
-    outline: none;
     background: #999;
     width: 100px;
     height: 3px;
-    font-size: 0;
+    margin: 0 5px;
+}
+
+.mainProduct .mainslider .slider .slick-dots button {
+    display: none;
+}
+
+.mainProduct .mainslider .slider .slick-dots li.slick-active {
+    background: #003;
 }
 
 .mainProduct .mainslider i {
@@ -259,9 +260,9 @@
 }
 
 #main .mainValue .container h2::after {
+    content: "";
     position: absolute;
     top: 175%;
-    content: "";
     display: block;
     width: 100px;
     height: 1px;
@@ -279,6 +280,7 @@
 }
 
 #main .mainValue .container .inner {
+    position: relative;
     flex: 1;
     border: 1px solid #fff;
     width: 380px;
@@ -293,15 +295,56 @@
 }
 
 #main .mainValue .container .inner a {
+    position: absolute;
+    inset: 65% auto auto 68%;
     display: inline-block;
     text-align: center;
     font-size: 13px;
     width: 90px;
     line-height: 30px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 #footer {
-    background: #333;
-    height: 207px;
+    background: #222;
+    height: 220px;
+}
+
+#footer .top {}
+
+#footer .container {
+    width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+#footer .container h2 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 100px;
+}
+
+
+#footer .container .bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#footer .container .footer {
+    display: flex;
+    gap: 30px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#footer .container .bottom ul {
+    display: flex;
+    gap: 20px;
+}
+
+#footer .container p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 50px;
 }
