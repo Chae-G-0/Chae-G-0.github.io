@@ -5,7 +5,7 @@ $(function () {
         dots: true,
         slidesToShow: 1,
         centerMode: true,
-        centerPadding: '170px'
+        centerPadding: '175px'
     });
 
     $('.mainslider .arrows i:nth-child(1)').on('click', function () {
