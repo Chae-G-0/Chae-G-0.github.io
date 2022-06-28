@@ -221,10 +221,12 @@
 }
 
 #main .mainProject .container .up {
+    overflow: hidden;
     margin: 0 0 70px 0;
 }
 
 #main .mainProject .container .inbox {
+    overflow: hidden;
     margin: 0 0 20px 0;
 }
 
@@ -243,6 +245,15 @@
     font-weight: 300;
     text-align: left;
     letter-spacing: -0.025em;
+}
+
+#main .mainProject .container img {
+    transition: transform 0.5s;
+
+}
+
+#main .mainProject .container img:hover {
+    transform: scale(1.2)
 }
 
 #main .mainValue {
